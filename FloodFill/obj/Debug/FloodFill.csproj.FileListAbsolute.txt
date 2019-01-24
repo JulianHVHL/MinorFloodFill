@@ -17,3 +17,5 @@ E:\Casus\FloodFill\FloodFill\obj\Debug\FloodFill.csprojResolveAssemblyReference.
 E:\Casus\FloodFill\FloodFill\obj\Debug\FloodFill.FormMain.resources
 E:\Casus\FloodFill\FloodFill\obj\Debug\FloodFill.Properties.Resources.resources
 E:\Casus\FloodFill\FloodFill\obj\Debug\FloodFill.csproj.GenerateResource.Cache
+E:\Casus\FloodFill\FloodFill\bin\Debug\FloodFill.exe.CodeAnalysisLog.xml
+E:\Casus\FloodFill\FloodFill\bin\Debug\FloodFill.exe.lastcodeanalysissucceeded

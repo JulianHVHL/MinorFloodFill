@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using System.IO;
-using System.ComponentModel;
-using System.Management;
 namespace FloodFill
 {
     public partial class FormMain : Form
@@ -58,7 +55,7 @@ namespace FloodFill
         {
 
             //run the algoritm
-            rasterFill.Run(tbPoints.Text, tbRaster.Text, tbOutput.Text,GetDirectionsUsed(),cbPointsHeader.Text ,(int)numericUpDownMaxDistance.Value, pb);
+            rasterFill.Run(tbPoints.Text, tbRaster.Text, tbOutput.Text, GetDirectionsUsed(), cbPointsHeader.Text, (int)numericUpDownMaxDistance.Value, pb);
             
         }
 
@@ -87,6 +84,11 @@ namespace FloodFill
         public List<string> usedDirections;
 
         RasterFlow rasterFill = new RasterFlow();
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/JulianHVHL");
+        }
         
     }
 }

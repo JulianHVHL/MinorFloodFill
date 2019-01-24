@@ -5,7 +5,6 @@ using System.Linq;
 using System.Windows.Forms;
 using System.IO;
 using System.ComponentModel;
-
 namespace FloodFill
 {
     class RasterFlow
@@ -38,22 +37,20 @@ namespace FloodFill
 
             //run backgroundworker if available
             if (!backgroundWorker.IsBusy)
-            {
+            { 
                 backgroundWorker.RunWorkerAsync(arguments);
-                MessageBox.Show("Done");
+                
             }
             else
             {
-                MessageBox.Show("BackgroundWorker busy");
+                MessageBox.Show("BackgroundWorker Busy");
             }
-
 
         }
 
 
         public void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            backgroundWorker.ReportProgress(0);
             //Background worker, prevent freezing UI
 
             //read arguments
@@ -67,39 +64,44 @@ namespace FloodFill
             int maxDist = (int)genericList[5];
             progressBar = (ProgressBar)genericList[6];
 
+
             backgroundWorker.ReportProgress(10);
 
             float[,] raster = AsciiToRaster(rasterPath);
-            backgroundWorker.ReportProgress(30);
-            costSoFar = ClearCostSoFar();
 
+            backgroundWorker.ReportProgress(20);
+            costSoFar = ClearCostSoFar();
+            backgroundWorker.ReportProgress(40);
             //grab data from points
             List<EntryPoint> StartPoints = CoordsFromPoints(pointPath, zName);
 
+            backgroundWorker.ReportProgress(60);
             for (int i = 0; i < StartPoints.Count; ++i)
             {
                 Algorithm(StartPoints[i].X, StartPoints[i].Y, StartPoints[i].Z, raster, maxDist);
             }
-            backgroundWorker.ReportProgress(70);
+            backgroundWorker.ReportProgress(80);
 
             RasterToAscii(costSoFar, outputPath);
+
             backgroundWorker.ReportProgress(100);
-            
         }
 
 
 
         public float[,] AsciiToRaster(string rasterPath)
         {
-            StreamReader sr = new StreamReader(rasterPath);
-            width = int.Parse(sr.ReadLine().Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1]);
-            height = int.Parse(sr.ReadLine().Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1]);
-            xllcorner = float.Parse(sr.ReadLine().Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1]);
-            yllcorner = float.Parse(sr.ReadLine().Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1]);
-            cellSize = float.Parse(sr.ReadLine().Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1]);
-            NODATA = (sr.ReadLine().Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1]).ToString();
-            float[,] raster = new float[height, width];
+            string[] lines = File.ReadAllLines(rasterPath);
 
+            width = int.Parse(lines[0].Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1]);
+            height = int.Parse(lines[1].Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1]);
+            xllcorner = float.Parse(lines[2].Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1]);
+            yllcorner = float.Parse(lines[3].Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1]);
+            cellSize = float.Parse(lines[4].Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1]);
+            NODATA = (lines[5].Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1]).ToString();
+
+            float[,] raster = new float[height, width];
+            StreamReader sr = new StreamReader(rasterPath);
 
             for (int i = 0; i <= 5; ++i)
             {
@@ -109,22 +111,16 @@ namespace FloodFill
             int row = 0;
             while (!sr.EndOfStream)
             {
-                string[] line = sr.ReadLine().Split(' ');
+                string[] line = sr.ReadLine().Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
                 for (int col = 0; col < width; ++col)
                 {
                     raster[row, col] = float.Parse(line[col]);
                 }
 
                 row++;
-            };
-
-
+            }
             return raster;
         }
-
-
-
-
 
         public int[,] ClearCostSoFar()
         {
@@ -137,8 +133,8 @@ namespace FloodFill
                 }
             }
             return c;
-
         }
+
 
         public List<EntryPoint> CoordsFromPoints(string pointPath, string zName)
         {
@@ -164,7 +160,7 @@ namespace FloodFill
                 for (int i = 0; i < pointsHeadersSplit.Length; ++i)
                 {
                     //get data positions
-                    if (pointsHeadersSplit[i] == posXCoordName)
+                    if (pointsHeadersSplit[i].ToString() == posXCoordName)
                     {
                         posXCoord = i;
                         continue;
@@ -192,9 +188,8 @@ namespace FloodFill
 
                     string data = sr.ReadLine();
                     string[] dataSplit = data.Split(' ');
-
-                    //Read data
-                    float tempX = float.Parse(dataSplit[posXCoord]);
+                    //todo Read data
+                    float tempX = float.Parse(dataSplit[posXCoord].ToString());
                     float tempY = float.Parse(dataSplit[posYCoord]);
                     float tempZ = float.Parse(dataSplit[posZValue]);
 
@@ -238,10 +233,13 @@ namespace FloodFill
                     if (n[i].X >= width) { continue; }
                     if (n[i].Y < 0) { continue; }
                     if (n[i].Y >= height) { continue; }
-                    //nodata
-                    if (raster[n[i].Y, n[i].X].ToString() == NODATA) { continue; }
+
                     //below z value
                     if (raster[n[i].Y, n[i].X] > z) { continue; }
+                        //nodata
+                    if (raster[n[i].Y, n[i].X].ToString() == NODATA) { continue; }
+
+
                     //outside maxDist
                     if (maxDist != 0) { if (costSoFar[current.Y, current.X] + 1 > maxDist) { continue; } }
                     //already visited
@@ -256,7 +254,7 @@ namespace FloodFill
                     }
                     else
                     {
-                        costSoFar[n[i].Y, n[i].Y] = Math.Min(costSoFar[n[i].Y, n[i].Y], newCost);
+                        costSoFar[n[i].Y, n[i].X] = Math.Min(costSoFar[n[i].Y, n[i].X], newCost);
                     }
                     qt.Enqueue(n[i]);
                 }
@@ -287,10 +285,10 @@ namespace FloodFill
 
         public EntryPoint PointRasterPosition(float x, float y, float z, float xllcorner, float yllcorner, float cellSize)
         {
+
             EntryPoint ep = new EntryPoint();
             float dx = (x - xllcorner);
             float dy = (y - yllcorner);
-
             double px = Math.Floor(dx / cellSize);
             double py = height - Math.Floor(dy / cellSize);
 
@@ -304,7 +302,7 @@ namespace FloodFill
         public void RasterToAscii(int[,] raster, string ExportPath)
         {
 
-            using (StreamWriter sw = new StreamWriter(ExportPath + "/Result" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".txt"))
+            using (StreamWriter sw = new StreamWriter(ExportPath + "/Export" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".txt"))
             {
                 sw.WriteLine("ncols " + width.ToString());
                 sw.WriteLine("nrows " + height.ToString());
@@ -338,6 +336,7 @@ namespace FloodFill
         }
 
 
+
         public void BackgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
             progressBar.Value = e.ProgressPercentage;
@@ -353,9 +352,8 @@ namespace FloodFill
         public float yllcorner;
         public float cellSize;
         public string NODATA;
-        public List<string> directions;
+        public List<String> directions;
         public ProgressBar progressBar;
-        
 
     }
 

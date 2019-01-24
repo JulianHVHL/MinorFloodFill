@@ -51,6 +51,7 @@
             this.lMaxDistance = new System.Windows.Forms.Label();
             this.numericUpDownMaxDistance = new System.Windows.Forms.NumericUpDown();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.DirectionsBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxDistance)).BeginInit();
             this.SuspendLayout();
@@ -142,7 +143,7 @@
             this.cbUL.Appearance = System.Windows.Forms.Appearance.Button;
             this.cbUL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbUL.Location = new System.Drawing.Point(4, 16);
-            this.cbUL.Margin = new System.Windows.Forms.Padding(2);
+            this.cbUL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbUL.Name = "cbUL";
             this.cbUL.Size = new System.Drawing.Size(33, 32);
             this.cbUL.TabIndex = 8;
@@ -152,7 +153,6 @@
             // 
             // DirectionsBox
             // 
-            this.DirectionsBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.DirectionsBox.Controls.Add(this.cbDR);
             this.DirectionsBox.Controls.Add(this.cbDM);
             this.DirectionsBox.Controls.Add(this.cbDL);
@@ -162,9 +162,9 @@
             this.DirectionsBox.Controls.Add(this.cbUM);
             this.DirectionsBox.Controls.Add(this.cbUL);
             this.DirectionsBox.Location = new System.Drawing.Point(5, 106);
-            this.DirectionsBox.Margin = new System.Windows.Forms.Padding(2);
+            this.DirectionsBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DirectionsBox.Name = "DirectionsBox";
-            this.DirectionsBox.Padding = new System.Windows.Forms.Padding(2);
+            this.DirectionsBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DirectionsBox.Size = new System.Drawing.Size(118, 135);
             this.DirectionsBox.TabIndex = 10;
             this.DirectionsBox.TabStop = false;
@@ -175,7 +175,7 @@
             this.cbDR.Appearance = System.Windows.Forms.Appearance.Button;
             this.cbDR.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDR.Location = new System.Drawing.Point(79, 89);
-            this.cbDR.Margin = new System.Windows.Forms.Padding(2);
+            this.cbDR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbDR.Name = "cbDR";
             this.cbDR.Size = new System.Drawing.Size(33, 32);
             this.cbDR.TabIndex = 15;
@@ -190,7 +190,7 @@
             this.cbDM.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbDM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDM.Location = new System.Drawing.Point(41, 89);
-            this.cbDM.Margin = new System.Windows.Forms.Padding(2);
+            this.cbDM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbDM.Name = "cbDM";
             this.cbDM.Size = new System.Drawing.Size(33, 32);
             this.cbDM.TabIndex = 14;
@@ -203,7 +203,7 @@
             this.cbDL.Appearance = System.Windows.Forms.Appearance.Button;
             this.cbDL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDL.Location = new System.Drawing.Point(4, 89);
-            this.cbDL.Margin = new System.Windows.Forms.Padding(2);
+            this.cbDL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbDL.Name = "cbDL";
             this.cbDL.Size = new System.Drawing.Size(33, 32);
             this.cbDL.TabIndex = 13;
@@ -218,7 +218,7 @@
             this.cbMR.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbMR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMR.Location = new System.Drawing.Point(79, 53);
-            this.cbMR.Margin = new System.Windows.Forms.Padding(2);
+            this.cbMR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbMR.Name = "cbMR";
             this.cbMR.Size = new System.Drawing.Size(33, 32);
             this.cbMR.TabIndex = 12;
@@ -233,7 +233,7 @@
             this.cbML.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbML.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbML.Location = new System.Drawing.Point(4, 53);
-            this.cbML.Margin = new System.Windows.Forms.Padding(2);
+            this.cbML.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbML.Name = "cbML";
             this.cbML.Size = new System.Drawing.Size(33, 32);
             this.cbML.TabIndex = 11;
@@ -246,7 +246,7 @@
             this.cbUR.Appearance = System.Windows.Forms.Appearance.Button;
             this.cbUR.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbUR.Location = new System.Drawing.Point(79, 16);
-            this.cbUR.Margin = new System.Windows.Forms.Padding(2);
+            this.cbUR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbUR.Name = "cbUR";
             this.cbUR.Size = new System.Drawing.Size(33, 32);
             this.cbUR.TabIndex = 10;
@@ -261,7 +261,7 @@
             this.cbUM.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbUM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbUM.Location = new System.Drawing.Point(41, 16);
-            this.cbUM.Margin = new System.Windows.Forms.Padding(2);
+            this.cbUM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbUM.Name = "cbUM";
             this.cbUM.Size = new System.Drawing.Size(33, 32);
             this.cbUM.TabIndex = 9;
@@ -276,9 +276,9 @@
             this.label1.Location = new System.Drawing.Point(8, 317);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 13);
+            this.label1.Size = new System.Drawing.Size(173, 13);
             this.label1.TabIndex = 17;
-            this.label1.Text = "FloodFill V1.0 - Julian Hoogvorst";
+            this.label1.Text = "RasterFlow V0.7 - Julian Hoogvorst";
             // 
             // lMaxDistance
             // 
@@ -293,7 +293,7 @@
             // numericUpDownMaxDistance
             // 
             this.numericUpDownMaxDistance.Location = new System.Drawing.Point(147, 121);
-            this.numericUpDownMaxDistance.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDownMaxDistance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMaxDistance.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -308,11 +308,24 @@
             this.backgroundWorker1.WorkerReportsProgress = true;
             this.backgroundWorker1.WorkerSupportsCancellation = true;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(764, 324);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(69, 13);
+            this.linkLabel1.TabIndex = 21;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Source Code";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(845, 335);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(845, 346);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.numericUpDownMaxDistance);
             this.Controls.Add(this.lMaxDistance);
             this.Controls.Add(this.label1);
@@ -326,9 +339,10 @@
             this.Controls.Add(this.cbPointsHeader);
             this.Controls.Add(this.tbPoints);
             this.Controls.Add(this.btnPoints);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(861, 374);
-            this.MinimumSize = new System.Drawing.Size(861, 374);
+            this.MaximumSize = new System.Drawing.Size(865, 385);
+            this.MinimumSize = new System.Drawing.Size(857, 385);
             this.Name = "FormMain";
             this.Text = "RasterFlow";
             this.DirectionsBox.ResumeLayout(false);
@@ -362,6 +376,7 @@
         private System.Windows.Forms.Label lMaxDistance;
         private System.Windows.Forms.NumericUpDown numericUpDownMaxDistance;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

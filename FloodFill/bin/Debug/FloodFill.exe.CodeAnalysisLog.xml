@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="E:\Casus\FloodFill\FloodFill\bin\Debug\FloodFill.exe">
+   <Modules>
+    <Module Name="floodfill.exe">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'FloodFill.exe' with a strong name key.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Mark 'FloodFill.exe' with CLSCompliant(true) because it exposes externally visible types.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Warning">Because assembly 'FloodFill.exe' contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="EntryPoint" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="DeclareTypesInNamespaces" Category="Microsoft.Design" CheckId="CA1050" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">'EntryPoint' should be declared inside a namespace.</Issue>
+          </Message>
+          <Message TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+           <Issue Name="Equals" Certainty="75" Level="Warning">'EntryPoint' should override Equals.</Issue>
+           <Issue Name="op_Equality" Certainty="75" Level="Warning">'EntryPoint' should override the equality (==) and inequality (!=) operators.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#X" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="X" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Name="MemberMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.cs" Line="98">Consider providing a more meaningful name than member name 'EntryPoint.X'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Y" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Name="MemberMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.cs" Line="99">Consider providing a more meaningful name than member name 'EntryPoint.Y'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Z" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Z" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Name="MemberMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.cs" Line="100">Consider providing a more meaningful name than member name 'EntryPoint.Z'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="FloodFill">
+       <Types>
+        <Type Name="EntryPoint" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+           <Issue Name="Equals" Certainty="75" Level="Warning">'EntryPoint' should override Equals.</Issue>
+           <Issue Name="op_Equality" Certainty="75" Level="Warning">'EntryPoint' should override the equality (==) and inequality (!=) operators.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#X" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="X" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Name="MemberMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="363">Consider providing a more meaningful name than member name 'EntryPoint.X'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Y" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Name="MemberMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="364">Consider providing a more meaningful name than member name 'EntryPoint.Y'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Z" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Z" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Name="MemberMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="365">Consider providing a more meaningful name than member name 'EntryPoint.Z'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FormMain" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Click_btnPoints(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.FileDialog.set_Filter(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.cs" Line="21">Method 'FormMain.Click_btnPoints(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'FileDialog.Filter.set(string)'. Retrieve the following string(s) from a resource table instead: "Points|*.txt".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Click_btnRaster(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.FileDialog.set_Filter(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.cs" Line="39">Method 'FormMain.Click_btnRaster(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'FileDialog.Filter.set(string)'. Retrieve the following string(s) from a resource table instead: "Raster|*.txt".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDirectionsUsed()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="Form1.cs" Line="63">Change 'List&lt;string&gt;' in 'FormMain.GetDirectionsUsed()' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.cs" Line="63">Change 'FormMain.GetDirectionsUsed()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InitializeComponent()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.Control.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="111">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Calculate".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="171">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Directions".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="291">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "MaxDistance (0 for disable)".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="281">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "RasterFlow V0.7 - Julian Hoogvorst".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="347">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "RasterFlow".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="121">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Select Output folder".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="65">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Select Points".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="91">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Select Raster".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="319">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Source Code".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="240">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "←".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="268">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "↑".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="225">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "→".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="197">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "↓".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="150">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "↖".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="253">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "↗".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="182">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "↘".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="210">Method 'FormMain.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "↙".</Issue>
+            </Message>
+            <Message Id="Hoogvorst" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="281">Correct the spelling of the unrecognized token 'Hoogvorst' in the literal '"RasterFlow V0.7 - Julian Hoogvorst"'.</Issue>
+            </Message>
+            <Message Id="MaxDistance" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="291">Correct the spelling of the unrecognized token 'MaxDistance' in the literal '"MaxDistance (0 for disable)"'.</Issue>
+            </Message>
+            <Message Id="RasterFlow" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="281">Correct the spelling of the unrecognized token 'RasterFlow' in the literal '"RasterFlow V0.7 - Julian Hoogvorst"'.</Issue>
+             <Issue Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="Form1.Designer.cs" Line="347">Correct the spelling of the unrecognized token 'RasterFlow' in the literal '"RasterFlow"'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ofd" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'FormMain.ofd' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="ofd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'ofd' in member name 'FormMain.ofd' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#sfd" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'FormMain.sfd' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="sfd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'sfd' in member name 'FormMain.sfd' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#usedDirections" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'FormMain.usedDirections' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;string&gt;' in 'FormMain.usedDirections' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RasterFlow" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implement IDisposable on 'RasterFlow' because it creates members of the following IDisposable types: 'BackgroundWorker'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Algorithm(System.Int32,System.Int32,System.Single,System.Single[,],System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="3#" TypeName="PreferJaggedArraysOverMultidimensional" Category="Microsoft.Performance" CheckId="CA1814" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Certainty="25" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="207">'raster' is a multidimensional array. Replace it with a jagged array if possible.</Issue>
+            </Message>
+            <Message Id="Body" TypeName="PreferJaggedArraysOverMultidimensional" Category="Microsoft.Performance" CheckId="CA1814" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Name="Body" Certainty="25" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="210">'RasterFlow.Algorithm(int, int, float, float[,], int)' uses a multidimensional array of 'bool[,]'. Replace it with a jagged array if possible.</Issue>
+            </Message>
+            <Message Id="System.Single.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="240">Because the behavior of 'float.ToString()' could vary based on the current user's locale settings, replace this call in 'RasterFlow.Algorithm(int, int, float, float[,], int)' with a call to 'float.ToString(IFormatProvider)'. If the result of 'float.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AsciiToRaster(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="104">In method 'RasterFlow.AsciiToRaster(string)', call System.IDisposable.Dispose on object 'sr' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="Body" TypeName="PreferJaggedArraysOverMultidimensional" Category="Microsoft.Performance" CheckId="CA1814" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Name="Body" Certainty="25" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="103">'RasterFlow.AsciiToRaster(string)' uses a multidimensional array of 'float[,]'. Replace it with a jagged array if possible.</Issue>
+            </Message>
+            <Message Id="Return" TypeName="PreferJaggedArraysOverMultidimensional" Category="Microsoft.Performance" CheckId="CA1814" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="25" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="93">'RasterFlow.AsciiToRaster(string)' returns a multidimensional array of 'float[,]'. Replace it with a jagged array if possible.</Issue>
+            </Message>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="96">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RasterFlow.AsciiToRaster(string)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="97">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RasterFlow.AsciiToRaster(string)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Single.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="98">Because the behavior of 'float.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RasterFlow.AsciiToRaster(string)' with a call to 'float.Parse(string, IFormatProvider)'. If the result of 'float.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="99">Because the behavior of 'float.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RasterFlow.AsciiToRaster(string)' with a call to 'float.Parse(string, IFormatProvider)'. If the result of 'float.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="100">Because the behavior of 'float.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RasterFlow.AsciiToRaster(string)' with a call to 'float.Parse(string, IFormatProvider)'. If the result of 'float.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="117">Because the behavior of 'float.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RasterFlow.AsciiToRaster(string)' with a call to 'float.Parse(string, IFormatProvider)'. If the result of 'float.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClearCostSoFar()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="Body" TypeName="PreferJaggedArraysOverMultidimensional" Category="Microsoft.Performance" CheckId="CA1814" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Name="Body" Certainty="25" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="127">'RasterFlow.ClearCostSoFar()' uses a multidimensional array of 'int[,]'. Replace it with a jagged array if possible.</Issue>
+            </Message>
+            <Message Id="Return" TypeName="PreferJaggedArraysOverMultidimensional" Category="Microsoft.Performance" CheckId="CA1814" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="25" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="126">'RasterFlow.ClearCostSoFar()' returns a multidimensional array of 'int[,]'. Replace it with a jagged array if possible.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CoordsFromPoints(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Single.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="192">Because the behavior of 'float.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RasterFlow.CoordsFromPoints(string, string)' with a call to 'float.Parse(string, IFormatProvider)'. If the result of 'float.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="193">Because the behavior of 'float.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RasterFlow.CoordsFromPoints(string, string)' with a call to 'float.Parse(string, IFormatProvider)'. If the result of 'float.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="194">Because the behavior of 'float.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RasterFlow.CoordsFromPoints(string, string)' with a call to 'float.Parse(string, IFormatProvider)'. If the result of 'float.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#costSoFar" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="Member" TypeName="PreferJaggedArraysOverMultidimensional" Category="Microsoft.Performance" CheckId="CA1814" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Certainty="25" Level="Warning">'RasterFlow.costSoFar' is a multidimensional array. Replace it with a jagged array if possible.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PointRasterPosition(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="cellSize" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="287">'cellSize', a parameter declared in 'RasterFlow.PointRasterPosition(float, float, float, float, float, float)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+            <Message Id="xllcorner" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="287">'xllcorner', a parameter declared in 'RasterFlow.PointRasterPosition(float, float, float, float, float, float)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+            <Message Id="yllcorner" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="287">'yllcorner', a parameter declared in 'RasterFlow.PointRasterPosition(float, float, float, float, float, float)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RasterToAscii(System.Int32[,],System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="0#" TypeName="PreferJaggedArraysOverMultidimensional" Category="Microsoft.Performance" CheckId="CA1814" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="Breaking">
+             <Issue Certainty="25" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="303">'raster' is a multidimensional array. Replace it with a jagged array if possible.</Issue>
+            </Message>
+            <Message Id="System.DateTime.ToString(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="305">Because the behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings, replace this call in 'RasterFlow.RasterToAscii(int[,], string)' with a call to 'DateTime.ToString(string, IFormatProvider)'. If the result of 'DateTime.ToString(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="307">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'RasterFlow.RasterToAscii(int[,], string)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="308">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'RasterFlow.RasterToAscii(int[,], string)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Single.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="309">Because the behavior of 'float.ToString()' could vary based on the current user's locale settings, replace this call in 'RasterFlow.RasterToAscii(int[,], string)' with a call to 'float.ToString(IFormatProvider)'. If the result of 'float.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="310">Because the behavior of 'float.ToString()' could vary based on the current user's locale settings, replace this call in 'RasterFlow.RasterToAscii(int[,], string)' with a call to 'float.ToString(IFormatProvider)'. If the result of 'float.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="311">Because the behavior of 'float.ToString()' could vary based on the current user's locale settings, replace this call in 'RasterFlow.RasterToAscii(int[,], string)' with a call to 'float.ToString(IFormatProvider)'. If the result of 'float.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Run(System.String,System.String,System.String,System.Collections.Generic.List`1&lt;System.String&gt;,System.String,System.Int32,System.Windows.Forms.ProgressBar)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.MessageBox.Show(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="46">Method 'RasterFlow.Run(string, string, string, List&lt;string&gt;, string, int, ProgressBar)' passes a literal string as parameter 'text' of a call to 'MessageBox.Show(string)'. Retrieve the following string(s) from a resource table instead: "BackgroundWorker Busy".</Issue>
+            </Message>
+            <Message Id="BackgroundWorker" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="46">Correct the spelling of the unrecognized token 'BackgroundWorker' in the literal '"BackgroundWorker Busy"'.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="46">Change 'RasterFlow.Run(string, string, string, List&lt;string&gt;, string, int, ProgressBar)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+            <Message Id="directions" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="24">'directions', a parameter declared in 'RasterFlow.Run(string, string, string, List&lt;string&gt;, string, int, ProgressBar)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+            <Message Id="progressBar" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2019-01-24 11:31:25Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="E:\Casus\FloodFill\FloodFill" File="RasterFlow.cs" Line="24">'progressBar', a parameter declared in 'RasterFlow.Run(string, string, string, List&lt;string&gt;, string, int, ProgressBar)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DeclareTypesInNamespaces" Category="Microsoft.Design" CheckId="CA1050">
+   <Name>Declare types in namespaces</Name>
+   <Description>A type should be defined inside a namespace to avoid duplication.</Description>
+   <Resolution Name="Default">{0} should be declared inside a namespace.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182134.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Dispose objects before losing scope</Name>
+   <Description>If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.</Description>
+   <Resolution Name="NonExceptionEdge">In method {0}, call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>Do not pass literals as localized parameters</Name>
+   <Description>Literal strings that are embedded in source code are difficult to localize. Avoid passing literal strings as arguments in circumstances where a localized string is generally expected.</Description>
+   <Resolution Name="KnownValue">Method {0} passes a literal string as parameter '{1}' of a call to {2}. Retrieve the following string(s) from a resource table instead: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+   <Name>Do not declare visible instance fields</Name>
+   <Description>Instance fields that are visible outside of the type that declares them, limit your ability to change the implementation details for those data items. Use properties instead. They do not compromise usability or performance and they do provide flexibility in that they conceal the implementation details of the underlying data.</Description>
+   <Resolution Name="Default">Because field {0} is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182141.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>Do not expose generic lists</Name>
+   <Description>Do not expose List&lt;T&gt; in object models. Use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt; instead. List&lt;T&gt; is meant to be used from implementation, not in object model API. List&lt;T&gt; is optimized for performance at the cost of long term versioning. For example, if you return List&lt;T&gt; to the client code, you will not ever be able to receive notifications when client code modifies the collection.</Description>
+   <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182142.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="MemberMoreMeaningfulName">Consider providing a more meaningful name than member name {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204">
+   <Name>Literals should be spelled correctly</Name>
+   <Description>This rule parses the literal string into words, tokenizing compound words, and checks the spelling of each word/token.</Description>
+   <Resolution Name="Default">Correct the spelling of the unrecognized token '{0}' in the literal '{1}'.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/bb264488.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliantAttribute</Name>
+   <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+   <Name>Mark assemblies with NeutralResourcesLanguageAttribute</Name>
+   <Description>The NeutralResourcesLanguage attribute informs the ResourceManager of the language used to render the neutral culture's resources for an assembly. When looking up resources in the same culture as the neutral resources language, the ResourceManager automatically uses the resources located in the main assembly, instead of searching for a satellite assembly with the current user interface culture for the current thread. This will improve lookup performance for the first resource you load and can reduce your working set.</Description>
+   <Resolution Name="Default">Because assembly {0} contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb385967.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815">
+   <Name>Override equals and operator equals on value types</Name>
+   <Description>The default System.ValueType implementation might not perform as well as a custom implementation.</Description>
+   <Resolution Name="Equals">{0} should override Equals.</Resolution>
+   <Resolution Name="op_Equality">{0} should override the equality (==) and inequality (!=) operators.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182276.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="PreferJaggedArraysOverMultidimensional" Category="Microsoft.Performance" CheckId="CA1814">
+   <Name>Prefer jagged arrays over multidimensional</Name>
+   <Description>Multidimensional arrays can have a negative impact on performance. Use a jagged array if possible.</Description>
+   <Resolution Name="Body">{0} uses a multidimensional array of {1}. Replace it with a jagged array if possible.</Resolution>
+   <Resolution Name="Default">{0} is a multidimensional array. Replace it with a jagged array if possible.</Resolution>
+   <Resolution Name="Return">{0} returns a multidimensional array of {1}. Replace it with a jagged array if possible.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182277.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="25">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternate">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be based on input from the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify {4}.</Resolution>
+   <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300">
+   <Name>Specify MessageBoxOptions</Name>
+   <Description>In order to run correctly on right-to-left systems, all calls to MessageBox.Show should use the overload that specifies MessageBoxOptions as an argument. Programs should detect whether they are running on a right-to-left system at run-time and pass the appropriate MessageBoxOptions value in order to display correctly.</Description>
+   <Resolution Name="Default">Change {0} to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182191.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>Types that own disposable fields should be disposable</Name>
+   <Description>Types that declare disposable members should also implement IDisposable. If the type does not own any unmanaged resources, do not implement a finalizer on it.</Description>
+   <Resolution Name="NonBreaking">Implement IDisposable on {0} because it creates members of the following IDisposable types: {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024">
+   <Name>Use properties where appropriate</Name>
+   <Description>Properties should be used instead of Get/Set methods in most situations. Methods are preferable to properties in the following situations: the operation is a conversion, is expensive or has an observable side-effect; the order of execution is important; calling the member twice in succession creates different results; a member is static but returns a mutable value; or the member returns an array.</Description>
+   <Resolution Name="Default">Change {0} to a property if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182181.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500">
+   <Name>Variable names should not match field names</Name>
+   <Description>Instance field and variable names should not be identical within the same scope.</Description>
+   <Resolution Name="Parameter">{0}, a parameter declared in {1}, has the same name as an instance field on the type. Change the name of one of these items.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182216.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
